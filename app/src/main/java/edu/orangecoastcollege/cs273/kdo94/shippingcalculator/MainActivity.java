@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         forceKeyboard.toggleSoftInput(InputMethodManager.RESULT_SHOWN, InputMethodManager.RESULT_SHOWN);
 
         weightEditText.addTextChangedListener(weightEditTextListener);
+        textBaseCost.setText(currency.format(currentPackage.getBaseCost()));
         updateViews();
     }
 
@@ -64,9 +65,11 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * Will update the views of the AddedCost and TotalShippingCost
+     */
     private void updateViews(){
         textAddedCost.setText(currency.format(currentPackage.getAddedCost()));
-        textBaseCost.setText(currency.format(currentPackage.getBaseCost()));
         textTotalCost.setText(currency.format(currentPackage.getTotalShippingCost()));
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculatrice de livraison</string>
+    <string name="added_cost">Coût Ajouté:</string>
+    <string name="base_cost">Coût de base:</string>
+    <string name="edit_text_hint">Entrez le montant ...</string>
+    <string name="text_ounces">(En onces)</string>
+    <string name="text_package_weight">Poids du colis</string>
+    <string name="total_shipping">Expédition Coût total:</string>
+</resources>

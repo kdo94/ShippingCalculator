@@ -19,7 +19,9 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -33,7 +35,9 @@
         android:selectAllOnFocus="true"
         android:hint="@string/edit_text_hint"
         android:focusableInTouchMode="true"
-        android:focusable="true" />
+        android:focusable="true"
+        android:textSize="30dp"
+        android:backgroundTint="@android:color/holo_blue_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,7 +56,10 @@
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,7 +69,10 @@
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,7 +82,10 @@
         android:id="@+id/textView5"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +94,10 @@
         android:id="@+id/textBaseCost"
         android:layout_below="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingRight="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +106,10 @@
         android:id="@+id/textAddedCost"
         android:layout_below="@+id/textBaseCost"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingRight="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,6 +118,9 @@
         android:id="@+id/textTotalCost"
         android:layout_below="@+id/textAddedCost"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingRight="30dp" />
 
 </RelativeLayout>
