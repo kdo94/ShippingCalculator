@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         weightEditText.requestFocus();
         InputMethodManager forceKeyboard = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        forceKeyboard.showSoftInput(weightEditText, InputMethodManager.SHOW_IMPLICIT);
+        forceKeyboard.toggleSoftInput(InputMethodManager.RESULT_SHOWN, InputMethodManager.RESULT_SHOWN);
 
         weightEditText.addTextChangedListener(weightEditTextListener);
         updateViews();
