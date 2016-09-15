@@ -1,10 +1,12 @@
 package edu.orangecoastcollege.cs273.kdo94.shippingcalculator;
 
+import android.content.Context;
 import android.icu.text.NumberFormat;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -28,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         textBaseCost = (TextView) findViewById(R.id.textBaseCost);
         textAddedCost = (TextView) findViewById(R.id.textAddedCost);
         textTotalCost = (TextView) findViewById(R.id.textTotalCost);
+
+        weightEditText.requestFocus();
+        InputMethodManager forceKeyboard = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        forceKeyboard.showSoftInput(weightEditText, InputMethodManager.SHOW_IMPLICIT);
 
         weightEditText.addTextChangedListener(weightEditTextListener);
         updateViews();
