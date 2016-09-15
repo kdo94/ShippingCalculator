@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.orangecoastcollege.cs273.kdo94.shippingcalculator.MainActivity"
-    android:id="@+id/shippingRelativeLayout">
+    android:id="@+id/shippingRelativeLayout"
+    android:background="@drawable/shipping_background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,9 +29,11 @@
         android:id="@+id/weightEditText"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:text="Text"
         android:gravity="center"
-        android:selectAllOnFocus="true" />
+        android:selectAllOnFocus="false"
+        android:hint="@string/edit_text_hint"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,8 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textBastCost"
+        android:id="@+id/textBaseCost"
         android:layout_below="@+id/textView2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -85,9 +87,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
         android:id="@+id/textAddedCost"
-        android:layout_below="@+id/textBastCost"
+        android:layout_below="@+id/textBaseCost"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -95,7 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
         android:id="@+id/textTotalCost"
         android:layout_below="@+id/textAddedCost"
         android:layout_alignParentRight="true"
